@@ -1,5 +1,7 @@
 import pygame
 
+# from alien_invasion import AlienInvasion
+
 
 class Ship:
     """Класс для управления кораблем"""
