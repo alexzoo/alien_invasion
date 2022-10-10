@@ -1,12 +1,15 @@
-import pygame
+from __future__ import annotations
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from alien_invasion import AlienInvasion
 
-# from alien_invasion import AlienInvasion
+import pygame
 
 
 class Ship:
     """Класс для управления кораблем"""
 
-    def __init__(self, ai_game):
+    def __init__(self, ai_game: AlienInvasion):
         """Инициализирует корабль и задает его начальную позицию"""
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()

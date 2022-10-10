@@ -1,13 +1,16 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from alien_invasion import AlienInvasion
+
 import pygame
 from pygame.sprite import Sprite
-
-# from alien_invasion import AlienInvasion
 
 
 class Bullet(Sprite):
     """класс для управления снарядами, выпущенными кораблем"""
 
-    def __init__(self, ai_game):
+    def __init__(self, ai_game: AlienInvasion):
         """создает объект снарядов в текущей позиции корабля"""
         super().__init__()
         self.screen = ai_game.screen
